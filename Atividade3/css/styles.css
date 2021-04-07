@@ -1,0 +1,244 @@
+/* :root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+} */
+
+/* - - - - -  Estilos globais - - - - -  */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+body,html{
+    width: 100%;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+header{
+    background-color: #1c1c1c;
+}
+
+.main-logo{
+    width: 50%;
+    margin:0 auto;
+}
+
+.nav-logo{
+    width: 100px;
+    padding: .6em 3em;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.call-to-action-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'IM Fell English SC',serif;
+    line-height: 1.2;
+    font-size: large;
+    color: #f8f9fa;
+}
+
+section{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;    
+}
+
+main{
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+h2{
+    
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    background-color: #333;
+    display: block;
+    line-height: 3em;
+    padding: .6em 3em;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+
+nav ul li a:hover {
+    background-color: #1c1c1c;
+    border-bottom: 2px solid darkred;
+}
+
+li {
+    float: right;
+}
+
+li:first-child {
+    float: left;
+}
+
+a.active{
+    border-bottom: 2px solid red;
+}
+
+.fill-page {
+    height: 100vh;
+}
+
+.dark{
+    background-color: #1c1c1c;
+}
+.dark h2 {
+    color: #e4e4e4;
+}
+.dark {
+    color: #d1d1d1;
+}
+
+.light{
+    background-color: #ffffff;
+}
+.light h2 {
+    color: #1c1c1c;
+}
+.light {
+    color: #333333;
+}
+
+
+/* - - - - - - estilos da tabela - - - - - - */
+.custom-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    
+}
+
+.custom-table td, .custom-table th {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+}
+
+.custom-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.custom-table tr:hover {background-color: #ddd;}
+
+.custom-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1c1c1c;
+    color: white;
+}
+/* FIM - - - - - - estilos da tabela - - - - - - */
+
+
+/* - - - - - - estilos do form - - - - - - */
+
+.custom-input-row{
+    padding: 20px;
+}
+
+.form-button{
+    background-color: #1c1c1c; /* Green */
+    border: 2px solid #ccc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.custom-input {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #1c1c1c;
+    color: rgb(185, 185, 185);
+    border: 1px solid #ccc;
+    border-radius: 0;
+  }
+
+.custom-input:focus {
+    outline: 3px solid #fff;
+    border: 2px solid transparent;
+  }
+
+  /* talvez funcione em todos navegadores */
+  ::placeholder {
+    color: rgb(185, 185, 185);
+    opacity: 1; /* Firefox */
+    }
+  
+  /* FIM - - - - - - estilos do form - - - - - - */
+
+  .galery{
+    width: 80%;
+    margin:0 auto;
+  }
+ 
+  .galery-item img{
+    width: 100%;
+    height: auto;
+  }
