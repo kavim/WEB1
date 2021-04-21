@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fronteira MarketPlace</title>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="index.html" style="font-size: 15px;"><i class="fa fa-external-link" aria-hidden="true"></i>
+            Site</a>
+            <hr>
+       <a href="adminPedidos.html"><i class="fa fa-home" aria-hidden="true"></i>
+            HOME</a>
+       <a href="adminProdutos.html"><i class="fa fa-clone" aria-hidden="true"></i>
+           Produtos</a>
+       <a href="adminCategorias.html"><i class="fa fa-list" aria-hidden="true"></i>
+            Categorias</a>
+       <a href="adminPedidos.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+           Pedidos</a>
+       <a href="adminUser.html"><i class="fa fa-user" aria-hidden="true"></i>
+           usuários</a>
+    </div>
+      
+      <div class="main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-1"></div>
+                <div class="col-md-12 mb-5">
+                    <div class="resume bg-vermelho">
+                        <b><i class="fa fa-archive" aria-hidden="true"></i>
+                             Total de pedidos</b>
+                        <h2>23</h2>
+                    </div>
+                    <div class="resume bg-verde">
+                        <b><i class="fa fa-line-chart" aria-hidden="true"></i> 
+                            Total de vendas</b>
+                        <h2>49</h2>
+                    </div>
+                    <div class="resume bg-cinza">
+                        <b><i class="fa fa-user" aria-hidden="true"></i> 
+                            Total de usuários</b>
+                        <h2>23</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Lista de Categorias</h3>
+                </div>
+                <div class="col-md-12">
+                    <small>Filtros</small>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-8">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-right">
+                    <button class="btn btn-default">
+                        <i class="fa fa-search" aria-hidden="true"></i> Pesquisar
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="simple-table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Opções</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                #1
+                            </td>
+                            <td>
+                                Eletrônicos e celulares
+                            </td>
+                            <td>
+                                <button class="btn btn-warning">Editar</button>
+                            </td>
+                          </tr>
+                        <tr>
+                            <td>
+                                #1
+                            </td>
+                            <td>
+                                Autos e peças
+                            </td>
+                            <td>
+                                <button class="btn btn-warning">Editar</button>
+                            </td>
+                          </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

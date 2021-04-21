@@ -118,10 +118,21 @@ dl, ol, ul {
   margin-top: 0;
 }
 
-
-
-
-
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+.mb-5 {
+  margin-bottom: 60px;
+}
 
 
 .bg-dark {
@@ -163,6 +174,17 @@ dl, ol, ul {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.py-4 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.py-5 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .px-1 {
   margin-right: 10px;
   margin-left: 10px;
@@ -220,10 +242,32 @@ hr {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-success {
+  background-color: #A5C882;
 }
 
 .btn-primary {
   background-color: #5AB1BB;
+}
+
+.btn-danger {
+  background-color: #DE3F55;
+}
+
+.btn-default {
+  background-color: #a7a7a7;
+}
+
+.btn-warning {
+  background-color: #F7DD72;
+  color: #1C1C1C;
+}
+
+.btn-block {
+  width: 100%;
 }
 
 button,
@@ -235,6 +279,239 @@ textarea {
   font: inherit;
   margin: 0;
 }
+
+/* The container */
+.customradio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.customradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.customradio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.customradio input:checked ~ .checkmark {
+  background-color: #5AB1BB;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.customradio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.customradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.customradio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+/* input texto */
+
+.input-texto input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  width: 100%;
+  background: #ffffff;
+}
+
+/* FIM input texto */
+
+
+.label {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.label-warning {
+  background-color: orange;
+  color: white;
+}
+
+.label-success {
+  background-color: #A5C882;
+  columns: white;
+}
+
+/* - - - - - - - - - - - - - - QUANTIDADE  - - - - - - - - - - - - - - */
+
+.quantity-component {
+  min-width: 130px;
+}
+
+.quantity-component input[type="number"]{
+    outline:none;
+    border-right: 0px;
+    border: 1px solid black;
+    height: 20px;
+    padding: 1%;
+    border-right: 0 px solid black;
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+
+/* - - - - - - - - - - - - - - FIM QUANTIDADE - - - - - - - - - - - - - - */
+
+
+
+/* - - - - - - - - - - - - - - lista de produtos - - - - - - - - - - - - - - */
+.products-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.products-table td, .products-table th {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.products-table-img {
+  width: 150px !important;
+}
+
+.products-table tr:nth-child(even){
+  background-color: #fff;
+}
+
+.products-table tr:hover {
+  background-color: #fff;
+}
+
+.products-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5AB1BB;
+  color: white;
+  border-radius: 10px;
+}
+
+/* - - - - - - - - - - - - - - FIM lista de simple - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - lista de produtos - - - - - - - - - - - - - - */
+.simple-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.simple-table td, .simple-table th {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+.simple-table-img {
+  width: 150px !important;
+}
+
+.simple-table tr:nth-child(even){
+  background-color: #fff;
+}
+
+.simple-table tr:hover {
+  background-color: #fff;
+}
+
+.simple-table tr {
+  border-bottom: 2px solid #ccc;
+}
+
+.simple-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #e0e0e0;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #1c1c1c;
+}
+
+/* - - - - - - - - - - - - - - FIM lista de produtos - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - -  login - - - - - - - - - - - - - -  */
+.loginform input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+
+.loginform input[type=email] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+.loginform input[type=password] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+.loginform input[type=submit] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #8bad69;
+  float: left;
+  width: 90%;
+  color: #fff;
+  font-weight: bold;
+  background: #A5C882;
+}
+
+/* - - - - - - - - - - - - - - fim login - - - - - - - - - - - - - -  */
+
 button {
   overflow: visible;
 }

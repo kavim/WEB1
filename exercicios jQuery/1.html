@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<h2>Exercício 1</h2>
+		Crie eventos que exibam alerts confome a ação do botão: <br />
+		<button id="btnUm">Clique aqui</button>
+		<button id="btnDois">Passe o mouse aqui</button>
+		<button id="btnTres">Passe e retire o mouse aqui</button>
+		<hr />		
+		
+		<h2>Exercício 2</h2>
+		Nome: <input type="text" id="inputExercicio2"/>
+		<button id="btnExercicio2">Enviar</button>
+		<p id="paragrafoExercicio2">Regra: Pegar o nome que o usuário e sobrescrever dentro desse paragráfo: Olá nomedigitado!</p>
+		<hr />
+		<h2>Exercício 3</h2>
+		<button id="btn1Exercicio3">Aparece e desaparece com efeito Fade</button>
+		<button id="btn2Exercicio3">Aparece e desaparece com efeito Slide</button>
+		<button id="btn3Exercicio3">Aparece com efeito Slide</button>
+		<button id="btn4Exercicio3">Desaparece com efeito Slide</button>
+		<p id="paragrafoExercicio3">Este parágrafo aparece ou e desaparece</p>
+		<hr />
+		<h2>Exercício 4</h2>
+		<p id="paragrafoExercicio4">Regra: Altere o estilo desse paragráfo confome os botões</p>
+		<button id="exercicio4btn1">Troca cor da letra para Azul</button>
+		<button id="exercicio4btn2">Troca cor da letra para Vermelha</button>
+		<button id="exercicio4btn3">Troca cor do fundo para Preta</button>
+		<button id="exercicio4btn4">Troca cor do fundo para Cinza</button>
+		<button id="exercicio4btn5">Troca tamanho da fonte para 20</button>
+		
+		<script>
+			$(document).ready(function(){
+				//exe1
+				$("#btnUm").click(function(){
+					alert('btnUm')
+				});
+				$("#btnDois").mouseover(function(){
+					alert('btnDois')
+				});				
+				$("#btnTres").mouseout(function(){
+					alert('btnTres')
+				});
+
+				//exe2
+				$("#btnExercicio2").click(function() {					
+					$("#paragrafoExercicio2").html(" Olá "+ $('#inputExercicio2').val() +"!");
+				});
+
+				//exe3
+				$("#paragrafoExercicio3").hide();
+
+				$("#btn1Exercicio3").click(function(){
+					$("#paragrafoExercicio3").fadeToggle();
+				});
+				$("#btn2Exercicio3").click(function(){
+					$("#paragrafoExercicio3").slideToggle();
+				});
+				$("#btn3Exercicio3").click(function(){
+					$("#paragrafoExercicio3").slideDown();
+				});
+				$("#btn4Exercicio3").click(function(){
+					$("#paragrafoExercicio3").slideUp();
+				});
+
+				//exe4
+				$("#exercicio4btn1").click(function(){
+					$("#paragrafoExercicio4").css({color:"#00f"});
+				});
+				$("#exercicio4btn2").click(function(){
+					$("#paragrafoExercicio4").css({color:"#f00"});
+				});
+				$("#exercicio4btn3").click(function(){
+					$("#paragrafoExercicio4").css({backgroundColor:"#000"});
+				});
+				$("#exercicio4btn4").click(function(){
+					$("#paragrafoExercicio4").css({backgroundColor:"gray"});
+				});
+				$("#exercicio4btn5").click(function(){
+
+					// Eu acho que a fonte já estava como 20px no meu navegador então coloquei 30px para ver diferença
+
+					$("#paragrafoExercicio4").css({'font-size':'30px'});
+				});
+				
+			});
+		</script>
+	</body>
+</html>

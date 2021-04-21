@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/icone.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fronteira MarketPlace</title>
+</head>
+<body>
+    <header>
+        <nav id="top-nav" class="container-fluid">
+            <div class="row bg-white">
+                <div class="col-md-2 py-2">
+                    <img src="img/logo1.png" alt="" width="150">
+                </div>
+                <div class="col-md-8 py-2">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-1 py-2 text-center">
+                    <i class="fa fa-3x fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-1 py-2 text-center">
+                    <a href="login.html" class="btn btn-entrar">Entrar</a>
+                </div>
+            </div>            
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Lista de produtos</h2>
+                </div>
+                <div class="col-sm-12 py-2">
+                    <table class="products-table">
+                        <tr>
+                          <th colspan="2">Produto</th>
+                          <th>Quantidade</th>
+                          <th>Preço Total</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 150px;">
+                                <div style="display: inline; text-align: center;">
+                                    <img src="https://img.terabyteshop.com.br/produto/g/teclado-mecanico-gamer-redragon-kumara-k552-switch-brown-com-led-abnt-2-preto_63617.jpg" class="products-table-img">
+                                </div>                          
+                          </td>
+                          <td>
+                            <h3>Teclado Mecânico Gamer Redragon Kumara K552, Switch Brown, Com Led, ABNT2, Black</h3>
+                            <span class="price">R$42,00</span>
+                          </td>
+                          <td class="quantity-component">
+                                <input type="number" value="2" min="1">         
+                                <button class="btn btn-danger">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>              
+                          </td>
+                          <td>
+                                <span class="price">R$42,00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 200px;">
+                                <div style="display: inline;">
+                                    <img src="https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=867184046" class="products-table-img">
+                                </div>                          
+                          </td>
+                          <td>
+                            <h3>Cerveja Faxe 10% Lata 1L</h3>
+                            <span class="price">R$20,00</span>
+                          </td>
+                          <td class="quantity-component">
+                                <input type="number" value="3" min="1">         
+                                <button class="btn btn-danger">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>              
+                          </td>
+                          <td>
+                                <span class="price">R$60,00</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 200px;">
+                                <div style="display: inline;">
+                                    <img src="https://i.etsystatic.com/8994225/r/il/aba189/2968576765/il_794xN.2968576765_ccix.jpg" class="products-table-img">
+                                </div>                          
+                          </td>
+                          <td>
+                            <h3>1/1 Full size Viking Shield- King Harald Finehair- 24” Wood Plank Full size Vikings battle ready authentic</h3>
+                            <span class="price">R$42,00</span>
+                          </td>
+                          <td class="quantity-component">
+                                <input type="number" value="1" min="1">         
+                                <button class="btn btn-danger">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                          </td>
+                          <td>
+                                <span class="price">R$30,00</span>
+                          </td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-12" style="padding: 20px; margin-bottom: 100px;">
+                <div class="row">
+                    <div class="col-sm-12 py-3">
+                        <h2>Escolha um metodo de pagamento</h2>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label class="customradio">Reais (BRL)
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="customradio">Pesos Uruguayos(UYU)
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="customradio">Dolares (USD)
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label class="customradio">Cartão de credito
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="customradio">Cartão de credito
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 input-texto py-2">
+                        <input type="text" placeholder="CUPOM DE DESCONTO">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 py-5">
+                        <button class="btn btn-success btn-block">
+                            Finalizar pedido
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="col-md-12 footer">
+            <p>Fronteira MarketPlace c</p>
+        </div>        
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

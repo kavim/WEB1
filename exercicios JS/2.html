@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body align="center">
+		<h1>Treinador de Futebol</h1>
+		Jogador:<input type="text" id="texto"/>
+		<br />
+		<br />
+		<button onclick="setPosition('tdGoleiro')">Goleiro</button>
+		<button onclick="setPosition('tdFixo')" >Fixo</button>
+		<button onclick="setPosition('tdEsquerda')">Ala Esquerda</button>
+		<button onclick="setPosition('tdDireita')">Ala Direta</button>
+		<button onclick="setPosition('tdPivo')">Pivô</button>
+		
+		<table border="1" style="width:800px; background-color:lightgreen; height:400px; text-align:center" align="center">
+			<thead>
+				<th colspan="4">Seleção</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="4" id="tdGoleiro">Goleiro</td>
+				</tr>
+				<tr>
+					<td id="tdEsquerda">Ala Esquerda</td>
+					<td id="tdFixo">Fixo</td>
+				</tr>
+				<tr>
+					<td id="tdPivo">Pivô</td>
+					<td id="tdDireita">Ala Direita</td>
+				</tr>
+			</tbody>
+		</table>
+		Regras: Pegar o nome informado pelo usuário no input Jogador e posiciná-lo na posição indicada pelo botão.
+
+		<script>
+
+			function setPosition(id)
+			{
+				let input = document.querySelector("#texto").value;
+				document.querySelector('#'+id).textContent = input === '' ? 'Indefinido': input;
+			}
+			
+		</script>
+	</body>
+</html>

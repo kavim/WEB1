@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<style type="text/css">
+			body{margin:0; background-color:#D90000; color:#FFFFFF; font-size:16px;}
+			#fonte{text-align:right;}
+			#cor{text-align:right;}
+			#tudo{margin:0 auto; width:800px;}
+			#menu{width:200px; float:left;}
+			#centro{width:600px; float:right;}
+			h1{
+				text-align:center;color:#FFC200
+			}
+			span{cursor:pointer;}
+		</style>
+
+	
+	</head>
+	<body>
+		<div id="tudo">
+			<div id="fonte">
+				Fonte: 
+					<span id="aumentarFonte" onclick="changeFontTo(18)">A+</span> 
+					<span id="normalFonte" onclick="changeFontTo(16)">A</span> 
+					<span id="diminuirFonte" onclick="changeFontTo(14)">A-</span>
+			</div>
+
+			<div id="cor">
+				Alto Contraste: 
+					<span id="altoContrasteOn">On</span> 
+					<span id="altoContrasteOff">Off</span>
+			</div>
+
+			<h1>ClicFronteira</h1>
+			<div id="menu">
+				<span>Inicio<span><br>
+				<span id="noticias" onclick="hideAndShow('not')">Noticias</span><br>
+				<div id="not">
+					Hoje<br>	
+					Esse mês<br>
+					Procurar<br>
+				</div>
+				<span id="parceiros" onclick="hideAndShow('par')">Parceiros</span><br>
+				<div id="par">
+					Ferragem Nochi<br>
+					Supermercado Righ<br>
+					Allianz Seguros<br>
+				</div>
+			</div>
+			<div id="centro">
+				<h2>Show do SPC agita a cidade</h2>
+				<img src="spc.jpg" width="400">
+				<p>Show ocorreu no último sábado movimentou a fronteira</p>
+				<a href="#" style="color:white;" id="link">Veja mais</a>
+			</div>
+		</div>
+
+		<script>
+			document.getElementById("not").style.display = 'none';
+			document.getElementById("par").style.display = 'none';
+			document.getElementById("link").onmouseover = function()
+			{
+				this.style.textDecoration = 'none'
+			};
+			document.getElementById("link").onmouseleave = function()
+			{
+				this.style.textDecoration = 'underline'
+			};
+			
+			function hideAndShow(id) 
+			{
+				console.log(id);
+				var element = document.getElementById(id);
+				element.style.display = element.style.display == 'none' ? 'inline' : 'none';			
+			}
+
+			function changeFontTo(val)
+			{
+				document.body.style.fontSize = val+'px';
+			}
+
+			document.getElementById("altoContrasteOn").onclick = function()
+			{	
+				document.body.style.backgroundColor = 'black';
+				document.body.style.color = 'orange';
+			}
+			document.getElementById("altoContrasteOff").onclick = function()
+			{	
+				document.body.style.backgroundColor = '#D90000';
+				document.body.style.color = '#FFFFFF';
+			}
+
+		</script>
+	</body>
+</html>
